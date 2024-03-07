@@ -284,4 +284,52 @@ arraySplice.splice(0, 1);
 console.log(arraySplice);
 // Создайте массив из объектов. Используя метод `splice`, удалите первый объект из массива.
 
+const concatNum = [1,2,3,4,5];
+const numberConcat = [5,4,3,2,1];
+
+const combine = concatNum.concat(numberConcat);
+
+console.log(combine);
+// Создайте два массива из чисел. Используя метод concat, объедините эти массивы в один.
+
+const firstWord = "Toyota";
+const twoWord = "Camry"
+
+const combineWord = firstWord.concat(" ", twoWord);
+
+console.log(combineWord);
+// Создайте две строки из слов. Используя метод concat, объедините эти строки в одну.
+
+const arrayConst = ["Banana","Apple"];
+const constArray = ["BMW","Mersedes"];
+
+const combineArray = arrayConst.concat(constArray);
+
+console.log(combineArray);
+// Создайте два массива из строк. Используя метод concat, объедините эти массивы в один.
+
+const simCon = "dsdr"
+const Consim = "psdfsd"
+
+const combineSim = simCon.concat(Consim);
+
+console.log(combineSim);
+// Создайте две строки из символов. Используя метод concat, объедините эти строки в одну.
+
+const arrauNumCon = [1, 2, "Hello", 3];
+const numConArr = [4, 5, 6];
+
+const comConcatNum = arrauNumCon.concat(numConArr);
+
+console.log(comConcatNum);
+// Создайте массив из чисел и строк. Используя метод `concat`, добавьте к массиву новый элемент – массив из трех чисел.
+
+const numDubl = [2,5,7];
+
+const dubbleNumber = numDubl.map(function(number) {
+  return number + 1
+})
+
+console.log(dubbleNumber);
+// Создайте массив из чисел. Используя метод map, создайте новый массив, в котором каждый элемент будет увеличен на 1.
 
