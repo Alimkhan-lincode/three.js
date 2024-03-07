@@ -150,46 +150,18 @@ let rectangle = Object.create(shape);
 rectangle.draw();
 // Создайте объект-прототип "shape" с методом "draw", который выводит на экран сообщение о том, что фигура рисуется. Создайте объект "rectangle" на основе этого прототипа и вызовите метод "draw"
 
-const fruits = ['apple','banana','cherry'];
 const number = [1,2,3,4,5];
-const mixed = ['hello', 123, true];
-const topAvto = ['BMW', 'Mersedes', 'Mustang']
-
-console.log(fruits);
 console.log(number);
-console.log(mixed);
-console.log(topAvto);
 // Литерал массива
 
 const numberArray = new Array();
 const arrayNumber = new Array (1,2,3,4,5)
-
 console.log(arrayNumber);
 
-const avtoArray = new Array();
-const avtoArrayResult = new Array('BMW','Mersedes','Camry');
-
-console.log(avtoArrayResult);
-
-const loveFruits = new Array();
-const fruitsArray = new Array('apple', 'banana', 'cherry')
-
-console.log(fruitsArray);
-
-const arrayLenght = new Array();
-const lenghtResult = new Array(10);
-
-console.log(lenghtResult);
 // new Array
-
-const greeting = "Hello"
-const greetResult = Array.from(greeting)
-
-console.log(greetResult);
 
 const avtoArrayfrom = "Mersedes"
 const mersedes = Array.from(avtoArrayfrom);
-
 console.log(mersedes);
 
 const psevdoArray = {
@@ -199,18 +171,117 @@ const psevdoArray = {
   2: 'c'
 }
 const arr = Array.from(psevdoArray);
-
 console.log(arr);
 
-const fruitsNew = {
-  length: 3,
-  0: 'Banana',
-  1: 'Apple',
-  2: 'Cherry'
-}
-const fruitsNewresult = Array.from(fruitsNew);
-
-console.log(fruitsNewresult);
 // Array.from
 
 // Cоздайте 4 разных массивов используя все 3 способа которые были показаны в видео.
+
+number.pop()
+number.push(6)
+number.shift()
+number.unshift(7)
+console.log(number);
+// Используя методы  push, pop, shift, unshift.Измените ваши массивы удалите что то из массива, добавьте что то в массив.
+
+const sliceArray = [1,2,3,4,5];
+const subSlice = sliceArray.slice(0,3);
+
+console.log(subSlice);
+// Создайте массив из чисел. Используя метод slice, создайте новый массив, содержащий первые три элемента исходного массива.
+
+const lineSlice = "Cтрока из слов и что-то там,куда-то там"
+const lineSplit = lineSlice.split(" ");
+
+const subLineSlice = lineSplit.slice(0,3).join(" ");
+
+console.log(subLineSlice);
+// Создайте строку из слов. Используя метод slice, создайте новую строку, содержащую первые три слова исходной строки.
+
+const wordSlice = ["Banana","Cherry","Apple","Burberry","Ц1азам"];
+const subWord = wordSlice.slice(2, 5)
+
+console.log(subWord);
+// Создайте массив из строк. Используя метод slice, создайте новый массив, содержащий элементы исходного массива, начиная с третьего элемента и заканчивая пятым.
+
+const simvolSlice = "grgtyh"
+const subSimSlice = simvolSlice.slice(1, 4);
+
+console.log(subSimSlice);
+// Создайте строку из символов. Используя метод slice, создайте новую строку, содержащую символы исходной строки, начиная со второго символа и заканчивая четвертым.
+
+const arraySlice = [
+  {
+    brand:"Mersedes",
+    age: 2017
+  },
+
+  {
+    brand:"BMW",
+    age: 2020
+  },
+
+  {
+    brand:"Toyoto",
+    age: 2023
+  }
+];
+
+const subArraySlice = arraySlice.slice(0, 2);
+console.log(subArraySlice);
+// Создайте массив из объектов. Используя метод slice, создайте новый массив, содержащий первые два объекта исходного массива.
+
+const spliceArray = [1,2,3,4,5];
+spliceArray.splice(0, 1);
+
+console.log(spliceArray);
+// Создайте массив из чисел. Используя метод splice, удалите первый элемент массива.
+
+const lineSplice = "Cтрока из слов и что-то там,куда-то там"
+const lineSplitt = lineSplice.split(" ");
+
+const delline = lineSplitt.splice(0, 1);
+
+const noDelLine = lineSplitt.join(" ");
+
+console.log(noDelLine);
+// Создайте строку из слов. Используя метод splice, удалите первое слово строки.
+
+const wordSplice = ["Banana","Cherry","Apple","Burberry","Ц1азам"];
+wordSplice.splice(2, 1);
+
+console.log(wordSplice);
+// Создайте массив из строк. Используя метод splice, удалите элемент массива, расположенный на второй позиции.
+
+const simSplice = "dnrgty";
+
+const simSolit = simSplice.split("");
+const spliceSio = simSolit.splice(0, 3);
+
+const simJoin = simSolit.join("");
+
+console.log(simJoin);
+// Создайте строку из символов. Используя метод splice, удалите первые три символа строки.
+
+const arraySplice = [
+  {
+    brand:"Mersedes",
+    age: 2017
+  },
+
+  {
+    brand:"BMW",
+    age: 2020
+  },
+
+  {
+    brand:"Toyoto",
+    age: 2023
+  }
+];
+
+arraySplice.splice(0, 1);
+console.log(arraySplice);
+// Создайте массив из объектов. Используя метод `splice`, удалите первый объект из массива.
+
+
