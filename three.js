@@ -363,8 +363,8 @@ const subObjectMap = objectArrMap.map(function (person) {
 console.log(subObjectMap);
 // Создайте массив из объектов, каждый из которых имеет свойства "name" и "age". Используя метод map, создайте новый массив, в котором каждый объект будет иметь дополнительное свойство "fullName", содержащее имя и возраст объекта.
 
-const arrNumBox = [15,35,50,65];
-const subArrNumBox = arrNumBox.map(function(number){
+const arrNumBox = [15, 35, 50, 65];
+const subArrNumBox = arrNumBox.map(function (number) {
   return number * 2
 })
 
@@ -380,68 +380,68 @@ console.log(lowcaseArray);
 // Создайте массив из строк. Используя метод map, создайте новый массив, в котором каждая строка будет записана в нижнем регистре.
 
 function evenNum(numbers) {
-  let subEvenNum = numbers.filter(function(number){
+  let subEvenNum = numbers.filter(function (number) {
     return number % 2 === 0;
   });
   return subEvenNum;
 }
 
-let numbers = [1,2,3,4,5,6,7,8,9,10];
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let subEvenNum = evenNum(numbers);
 
 console.log(subEvenNum);
 // Напишите функцию, которая принимает массив чисел и возвращает только четные числа из этого массива, используя метод filter
 
 function strinFive(string) {
-  let subStrin = string.filter(function(str){
+  let subStrin = string.filter(function (str) {
     return str.length >= 5
   });
 
   return subStrin;
 }
 
-let string = ["BMW","Mersedes","Toyota"];
+let string = ["BMW", "Mersedes", "Toyota"];
 let subStrin = strinFive(string);
 
 console.log(subStrin);
 // Напишите функцию, которая принимает массив строк и возвращает только те строки, длина которых больше или равна 5, используя метод filter
 
 function productArr(products) {
-  let subProduct = products.filter(function(product) {
+  let subProduct = products.filter(function (product) {
     return product.price > 1000;
   });
   return subProduct;
 }
 
 const products = [
-  {name:'Телефон', price: 40000},
-  {name:'Очки', price: 650},
-  {name:'Часы', price: 20000},
-  {name:'Пончик', price: 50}
+  { name: 'Телефон', price: 40000 },
+  { name: 'Очки', price: 650 },
+  { name: 'Часы', price: 20000 },
+  { name: 'Пончик', price: 50 }
 ];
 
 let subProduct = productArr(products);
 console.log(subProduct);
 // Напишите функцию, которая принимает массив объектов и возвращает только те объекты, у которых свойство `price` больше 1000, используя метод `filter`
 
-const arrRed = [1,2,3,4,5,6,7,8,9,10];
-const subRed = arrRed.reduce(function(accum, vacum){
+const arrRed = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const subRed = arrRed.reduce(function (accum, vacum) {
   return accum + vacum;
 }, 0);
 
 console.log(subRed);
 // Создайте массив из чисел. Используя метод reduce, вычислите сумму всех элементов массива.
 
-const stringRed = ['Apple','Banana','Cherry'];
-const subStrRed = stringRed.reduce(function(lak, kak){
+const stringRed = ['Apple', 'Banana', 'Cherry'];
+const subStrRed = stringRed.reduce(function (lak, kak) {
   return lak + " " + kak;
-}, );
+},);
 
 console.log(subStrRed);
 // Создайте массив из строк. Используя метод reduce, объедините все строки в одну строку.
 
-const przRed = [3,7,4,15];
-const subPrzRed = przRed.reduce(function(accum, vacum){
+const przRed = [3, 7, 4, 15];
+const subPrzRed = przRed.reduce(function (accum, vacum) {
   return accum * vacum;
 }, 1);
 
@@ -449,20 +449,20 @@ console.log(subPrzRed);
 // Создайте массив из чисел. Используя метод reduce, вычислите произведение всех элементов массива.
 
 const arrayRed = [
-  {name:"John", age: 20},
-  {name:"Mike", age: 18},
-  {name:"Vika", age: 25}
+  { name: "John", age: 20 },
+  { name: "Mike", age: 18 },
+  { name: "Vika", age: 25 }
 ];
 
-const subArrayRed = arrayRed.reduce(function(akak, nekak){
+const subArrayRed = arrayRed.reduce(function (akak, nekak) {
   return akak + nekak.age;
 }, 0) / arrayRed.length;
 
 console.log(subArrayRed);
 // Создайте массив из объектов, каждый из которых имеет свойства "name" и "age". Используя метод reduce, вычислите средний возраст всех объектов в массиве.
 
-const arrNumRed = [1,2,3,4,5,6,7,8,9,10];
-const subArrNumRea = arrNumRed.reduce(function(papa,mama){
+const arrNumRed = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const subArrNumRea = arrNumRed.reduce(function (papa, mama) {
   if (mama % 2 === 0) {
     return papa + mama;
   } else {
@@ -472,3 +472,85 @@ const subArrNumRea = arrNumRed.reduce(function(papa,mama){
 
 console.log(subArrNumRea);
 // Создайте массив из чисел. Используя метод reduce, вычислите сумму всех четных элементов массива.
+
+const arrSortNum = [3, 4, 2, 5, 1, 8, 6, 7, 10, 9];
+arrSortNum.sort(function (a, b) {
+  return a - b;
+})
+
+console.log(arrSortNum);
+// Создайте массив из чисел. Используя метод sort, отсортируйте его по возрастанию.
+
+const arrayAlfavit = ['Car', 'Imposble', 'Heart', 'Big', 'Air'];
+arrayAlfavit.sort();
+
+console.log(arrayAlfavit);
+// Создайте массив из строк. Используя метод sort, отсортируйте его в алфавитном порядке.
+
+const arryObjectSort = [
+  { name: "John", age: 30 },
+  { name: "Mike", age: 10 },
+  { name: "Vika", age: 20 }
+];
+
+arryObjectSort.sort(function (a, b) {
+  return a.age - b.age
+})
+
+console.log(arryObjectSort);
+
+const arrNumSort = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+arrNumSort.sort(function (a, b) {
+  return b - a;
+})
+
+console.log(arrNumSort);
+// Создайте массив из чисел. Используя метод sort, отсортируйте его по убыванию.
+
+const returnArrString = ['Apple', 'Banana', 'Cherry'];
+const reverseArrString = returnArrString.sort(function (a, b) {
+  return b.localeCompare(a);
+})
+
+console.log(reverseArrString);
+// Создайте массив из строк. Используя метод sort, отсортируйте его в обратном алфавитном порядке.
+
+const numarrForeach = [1, 2, 3, 4, 5];
+numarrForeach.forEach(function (number) {
+  console.log(number);
+})
+// Создайте массив из чисел. Используя метод forEach, выведите каждый элемент массива в консоль.
+
+const ForeachString = ['Bear', 'Elephant', 'Cat'];
+ForeachString.forEach(function (str) {
+  console.log(str);
+})
+// Создайте массив из строк. Используя метод forEach, выведите каждую строку массива в консоль.
+
+const objectForeach = [
+  { name: 'Mike', age: 20 },
+  { name: 'Vika', age: 18 },
+  { name: 'Sasha', age: 25 }
+]
+
+objectForeach.forEach(function (person) {
+  console.log(person.name + " " + person.age);
+})
+// Создайте массив из объектов, каждый из которых имеет свойства "name" и "age". Используя метод forEach, выведите в консоль имя и возраст каждого объекта в массиве.
+
+let arrr = [1,2,3,4,5,6,7,8,9,10];
+let sum = 0;
+
+arrr.forEach(function(elem) {
+	sum += elem;
+});
+
+console.log(sum);
+// Создайте массив из чисел. Используя метод forEach, выведите в консоль сумму всех элементов массива.
+
+const arrstringFor = ['Apple','Banana','Cherry'];
+arrstringFor.forEach(function(str){
+  console.log(str.length);
+})
+
+//Создайте массив из строк. Используя метод `forEach`, выведите в консоль количество символов в каждой строке массива.
