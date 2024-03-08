@@ -554,3 +554,48 @@ arrstringFor.forEach(function(str){
 })
 
 //Создайте массив из строк. Используя метод `forEach`, выведите в консоль количество символов в каждой строке массива.
+
+const numberFind = [2,4,3,1,8,7,6,9,11,10,15,13];
+const subNumFind = numberFind.find(function(number){
+  return number > 10;
+});
+
+console.log(subNumFind);
+// Создайте массив из чисел. Используя метод find, найдите первый элемент массива, который больше 10.
+
+const arrStrfing = ["Apple","Banana","Cherry"];
+const subArrStr = arrstringFor.find(function(str){
+  return str.includes('A');
+});
+
+console.log(subArrStr);
+// Создайте массив из строк. Используя метод find, найдите первую строку массива, которая содержит букву "a".
+
+const arrObjectFind = [
+  {name:"John", age:"23"},
+  {name:"John", age:"40"},
+  {name:"John", age:"19"}
+];
+
+const subObjectFind = arrObjectFind.find(function(number){
+  return number.age > 30;
+});
+
+console.log(subObjectFind);
+// Создайте массив из объектов, каждый из которых имеет свойства "name" и "age". Используя метод find, найдите первый объект в массиве, у которого возраст больше 30.
+
+const sumArrFind = [3,4,5,6];
+const subSumFind = sumArrFind.find(function(num){
+  return num % 2 === 0;
+});
+
+console.log(subSumFind);
+// Создайте массив из чисел. Используя метод find, найдите первый элемент массива, который является четным.
+
+const fiveStrFind = ["cherry","banana","apple"];
+const subFive = fiveStrFind.find(function(str){
+  return str.startsWith('a');
+});
+
+console.log(subFive);
+// Создайте массив из строк. Используя метод find, найдите первую строку массива, которая начинается с буквы "a".
